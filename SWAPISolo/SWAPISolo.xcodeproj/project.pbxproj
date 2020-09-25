@@ -15,6 +15,7 @@
 		2A152C28251DC37F00DCBC3A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A152C27251DC37F00DCBC3A /* Character.swift */; };
 		2A152C2F251DC4DA00DCBC3A /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A152C2E251DC4DA00DCBC3A /* CharacterController.swift */; };
 		2A152C32251DC59F00DCBC3A /* CharacterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A152C31251DC59F00DCBC3A /* CharacterError.swift */; };
+		2A152C3B251DC89700DCBC3A /* CharacterSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A152C3A251DC89700DCBC3A /* CharacterSearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2A152C27251DC37F00DCBC3A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		2A152C2E251DC4DA00DCBC3A /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
 		2A152C31251DC59F00DCBC3A /* CharacterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterError.swift; sourceTree = "<group>"; };
+		2A152C3A251DC89700DCBC3A /* CharacterSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		2A152C24251DC2DA00DCBC3A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2A152C3A251DC89700DCBC3A /* CharacterSearchTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				2A152C08251DC1F300DCBC3A /* AppDelegate.swift in Sources */,
 				2A152C32251DC59F00DCBC3A /* CharacterError.swift in Sources */,
 				2A152C0A251DC1F300DCBC3A /* SceneDelegate.swift in Sources */,
+				2A152C3B251DC89700DCBC3A /* CharacterSearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
