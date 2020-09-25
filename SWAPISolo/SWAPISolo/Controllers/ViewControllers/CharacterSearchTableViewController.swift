@@ -18,22 +18,37 @@ class CharacterSearchTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Star Wars"
         characterIDSearchBar.delegate = self
     }
-
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath)
         guard let characterToDisplay = character else { return UITableViewCell() }
         cell.textLabel?.text = characterToDisplay.name
         cell.detailTextLabel?.text = characterToDisplay.gender
-
+        
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // IIDOO
+        // I: Identifier
+        if segue.identifier == "toDetailVC" {
+            // D: Destination
+            guard let destinationVC = segue.destination as? CharacterDetailViewController else { return }
+            // O: Object to send
+            let characterToSend = character
+            // O: receive Object
+            destinationVC.character = characterToSend
+        }
+    }
+    
     
     // MARK: - Helpers
     func fetch(_ id: Int) {
