@@ -17,7 +17,7 @@ struct StringConstants {
 
 class CharacterController {
     
-    func fetchCharacterBy(id: Int, completion: @escaping (Result<Character, CharacterError>) -> Void) {
+    static func fetchCharacterBy(id: Int, completion: @escaping (Result<Character, CharacterError>) -> Void) {
         guard let baseURL = URL(string: StringConstants.baseURLString) else { return completion(.failure(.invalidURL)) }
         let apiURL = baseURL.appendingPathComponent(StringConstants.apiComponentString)
         let peopleURL = apiURL.appendingPathComponent(StringConstants.peopleComponentString)
