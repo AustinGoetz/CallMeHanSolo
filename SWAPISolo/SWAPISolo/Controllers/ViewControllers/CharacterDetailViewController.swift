@@ -38,7 +38,9 @@ class CharacterDetailViewController: UIViewController {
     func presentErrorAlert() {
         let alertController = UIAlertController(title: "Error", message: "Something Went Wrong \nPlease Try Again", preferredStyle: .actionSheet)
         
-        let dismissAction = UIAlertAction(title: "Dismiss", style: .cancel, handler: nil)
+        let dismissAction = UIAlertAction(title: "Dismiss", style: .cancel) { (_) in
+            self.navigationController?.popViewController(animated: true)
+        }
         alertController.addAction(dismissAction)
         
         present(alertController, animated: true)

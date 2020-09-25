@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct TopLevelDictionary: Decodable {
+    let results: [Character]
+}
+
 struct Character: Decodable {
     let name: String
     let height: String
